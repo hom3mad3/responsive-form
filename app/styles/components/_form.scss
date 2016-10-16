@@ -1,56 +1,75 @@
 // -----------------------------------------------------------------------------
 // Form
 // -----------------------------------------------------------------------------
-
-.contact-form{
+.contact-form {
   max-width: 320px;
   margin: 0 auto;
 }
-
 form {
   padding: 1em 0;
-  border-radius: .5em;
+  border-radius: 0.5em;
   background: $light-grey;
-  box-shadow: 1em 0px 0px $light-grey, -1em 0px 0px $light-grey;
+  box-shadow: 1em 0 0 $light-grey, -1em 0 0 $light-grey;
 }
-
-label{
-  font-size: 10pt;
+label {
   text-transform: uppercase;
 }
-
-button:focus{
+button:focus {
   outline: none;
 }
-
 input {
   border: 1px solid $dark-grey;
-  border-radius: .2em;
+  border-radius: 0.2em;
   font-size: 14px;
   padding: 10px;
   width: 100%;
 }
-
-input:focus {
-  }
-
-input:invalid {
-    border: orange;
+input[type=placeholder] {
+  margin-left: 1em;
 }
-
 input[type=checkbox] {
   width: 13px;
- height: 13px;
- padding: 0;
- margin:0;
- vertical-align:middle;
- position: relative;
+  height: 13px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  position: relative;
 }
-
-label .daten{
+label.daten {
   display: block;
   padding-left: 15px;
   text-indent: -15px;
   font-size: 0.6em;
   text-transform: lowercase!important;
+}
+input.email {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 0;
+  font-family: inherit;
+  font-size: 90%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* invalid fields */
+input.invalid {
+  border: 1px solid #FE8B0F;
+  background-color: #FDD;
+}
+input:focus.invalid {
+  outline: none;
+}
+/* error messages */
+.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #FE8B0F;
+  border-radius: 0 0 5px 5px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.error.active {
+  padding: 0.3em;
 }

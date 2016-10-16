@@ -1,34 +1,25 @@
 // -----------------------------------------------------------------------------
 // Icons
 // -----------------------------------------------------------------------------
-input#vorname {
-  background-color: pink;
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
 }
-#vorname:focus {
-  background-image: url("http://rexkirby.com/kirbyandson/images/name.svg");
-  background-size: 30px 30px;
-  background-position: 8px 5px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
+
+/* style icon */
+.inner-addon .fa {
+  position: absolute;
+  padding: 8px 10px;
+  pointer-events: none;
+  background-color: $icon-bg;
+  border-radius: 5px;
+  border: 1px solid $dark-grey;
 }
-#email {
-  background-image: url("http://rexkirby.com/kirbyandson/images/email.svg");
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
-#email:focus {
-  background-image: url("http://rexkirby.com/kirbyandson/images/email.svg");
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
-#comment {
-  background-image: url("http://rexkirby.com/kirbyandson/images/comment.svg");
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
+
+/* align icon */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }

@@ -14,13 +14,15 @@
     var assert = chai.assert;
     var expect = chai.expect;
     var should = chai.should();
+    mocha.ui('bdd');
+    mocha.reporter('html');
   </script>
   <!-- bower:js -->
   <!-- endbower -->
   <!-- include source files here... -->
   <!-- include spec files here... -->
   <script src="spec/test.js"></script>
-  <script type="text/javascript" src="/app/scripts/main.js"></script>
+  <script type="text/javascript" src="/app/scripts/validation.js"></script>
   <script>
     if (navigator.userAgent.indexOf('PhantomJS') === -1) {
       mocha.run();

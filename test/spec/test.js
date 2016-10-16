@@ -1,20 +1,20 @@
 (function () {
   'use strict';
 
-  describe('Give it some context', function () {
-    describe('maybe a bit more context here', function () {
-      it('should run here few assertions', function () {
+  describe('form', function() {
+    var formElem = document.forms[0];
+    var registerButton = document.getElementById('register-button');
 
-      });
+    it('Form exists in the DOM', function() {
+      expect(formElem).to.not.equal(null);
+    });
+
+    it('Input field should be set to type email', function() {
+      expect(formElem.email.getAttribute('type')).to.equal('email');
+    });
+
+    it('Register button has the right text', function() {
+      expect(registerButton.innerHTML).to.equal('Jetzt Registrieren');
     });
   });
-
-
-  describe("function f", function(){
-    it("adds numbers", function(done){
-      expect(f(3, 4)).to.be.equal(7);
-      done();
-      });
-    });
-
 })();

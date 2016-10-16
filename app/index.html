@@ -1,83 +1,109 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dawanda_Form</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dawanda_Form</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="contact-form">
-
-        <a href="#" class="button facebook"><i class="fa fa-facebook" aria-hidden="true"></i>
+  <div class="contact-form">
+    <a href="#" class="button facebook"><i class="fa fa-facebook" aria-hidden="true"></i>
         &#220;ber facebook registrieren</a>
-        <p>oder ohne facebook</p>
+    <p class="subtitle lines"><span><a href="#">oder ohne facebook</a></span></p>
 
-      <div id="mainform">
+    <div id="mainform">
       <form id="form">
-      <label><i class="fa fa-user" aria-hidden="true"></i>Vorname</label>
-      <input type="text" id="vorname"/>
-      <label>Nachname</label>
-      <input type="text" id="nachname"/>
-      <label>Mietgliedsname</label>
-      <input type="text" id="mietgliedsname" placeholder="Dein Mietgliedsname ist öffentlich"/>
-      <label>E-mail</label>
-      <input type="text" id="email"/>
-      <label>Passwort</label>
-      <input type="password" id="passwort"/>
 
-      <label class=daten><input type="checkbox" name="chk" value="">Ich willige in die Verarbeitung und Nutzung meiner Daten gemas der Datenschützenerklärung ein.</label>
+        <label>Vorname</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" />
+        </div>
 
-      <button type="submit" class="button confirm" value="Jetzt Registrieren">Jetzt Registrieren</button>
+
+        <label>Nachname</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" />
+        </div>
+
+        <label>Mitgliedsname</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-user"></i>
+          <input type="text" class="form-control" placeholder="Dein Mitgliedsname ist öffentlich" />
+        </div>
+
+
+        <label>E-mail</label>
+        <input type="email" class="email" id="email" name="email">
+
+        <label>Passwort</label>
+        <input type="password" id="passwort" />
+
+        <label class=daten>
+          <input type="checkbox" name="chk" value="">Ich willige in die Verarbeitung und Nutzung meiner Daten gemas der Datenschützenerklärung ein.
+        </label>
+
+        <button type="submit" id="register-button" class="button confirm" value="Jetzt Registrieren">Jetzt Registrieren</button>
       </form>
-      </div>
-
-<section>
-  Bereits mietglied bei DaWanda? Hier einloggen
-</section>
-
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <p class="subtitle lines"><span>Bereits mietglied bei DaWanda? <a href="#">Hier einloggen</a></span></p>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  </div>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/validation.js -->
+  <script src="scripts/validation.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>

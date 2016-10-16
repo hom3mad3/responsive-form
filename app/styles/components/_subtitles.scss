@@ -1,0 +1,29 @@
+.subtitle {
+  font-size: .8em;
+}
+
+.lines {
+  line-height: 0.5;
+  text-align: center;
+}
+.lines span {
+  display: inline-block;
+  position: relative;
+}
+.lines span:before,
+.lines span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid $dark-grey;
+  top: 0;
+  width: 100%;
+}
+.lines span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.lines span:after {
+  left: 100%;
+  margin-left: 15px;
+}
