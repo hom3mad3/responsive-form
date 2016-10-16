@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Button
+// -----------------------------------------------------------------------------
+.button {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:active{
+  border-bottom: none;
+}
+
+.facebook{
+  font-size: .8em;
+  background-color: $facebook;
+  border-color: darken($facebook, 20%);
+}
+
+.confirm{
+  font-size: 1em;
+  background-color: #729C0C;
+  border-color: darken(#729C0C, 20%);
+}
