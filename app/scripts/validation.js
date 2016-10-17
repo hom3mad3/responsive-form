@@ -20,12 +20,16 @@ $(function() {
         error.insertAfter(element);
       }
     }
-  })
+  });
 
-//safe password
-$validator.addMethod('strongpassword', function(value, element){
-  return false;
-}, 'Password must be at least 6 characters long and contain one number')
+//safe password custom method
+$.validator.addMethod('strongPassword', function(value, element){
+  return this.optional(element) || //checks to see if input is required - if not,
+  value.length >=6 //returns true if password is longer than 6,
+  && /\d/.test(value)//has at least one digit,
+  && /[a-z]/i.test(value); //at least one character
+}, 'Password must be at least 6 characters long and contain one number');
+
 
 //validation
   $("form").validate({
@@ -35,7 +39,8 @@ $validator.addMethod('strongpassword', function(value, element){
         email: true
       },
       vorname: {
-        required: true
+        required: true,
+        lettersonly: true
       },
       nachname: {
         required: true
@@ -44,7 +49,11 @@ $validator.addMethod('strongpassword', function(value, element){
         required: true
       },
       password: {
-        required: true
+        required: true,
+        strongPassword: true
+      },
+      checkbox: {
+        required:true
       }
     },
     messages: {
