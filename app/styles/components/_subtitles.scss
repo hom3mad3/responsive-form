@@ -1,7 +1,6 @@
 .subtitle {
-  font-size: .8em;
+  font-size: 0.6em;
 }
-
 .lines {
   line-height: 0.5;
   text-align: center;
@@ -10,8 +9,8 @@
   display: inline-block;
   position: relative;
 }
-.lines span:before,
-.lines span:after {
+.lines span:after,
+.lines span:before {
   content: "";
   position: absolute;
   height: 5px;

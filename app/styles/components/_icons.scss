@@ -3,23 +3,35 @@
 // -----------------------------------------------------------------------------
 /* enable absolute positioning */
 .inner-addon {
-    position: relative;
+  position: relative;
 }
-
 /* style icon */
 .inner-addon .fa {
   position: absolute;
   padding: 8px 10px;
   pointer-events: none;
   background-color: $icon-bg;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 1px solid $dark-grey;
 }
-
 /* align icon */
-.left-addon .fa  { left:  0px;}
-.right-addon .fa { right: 0px;}
-
+.left-addon .fa {
+  left: 0;
+}
+.right-addon .fa {
+  right: 0;
+}
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
+}
+.fa-envelope {
+  font-size: 15px;
+  padding: 12.5px 9px !important;
+}
+.fa-lock {
+  padding: 8px 10.5px !important;
+}

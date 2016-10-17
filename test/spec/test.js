@@ -3,7 +3,7 @@
 
   describe('form', function() {
     var formElem = document.forms[0];
-    var registerButton = document.getElementById('register-button');
+    var registerButton = document.getElementById('signup-button');
 
     it('Form exists in the DOM', function() {
       expect(formElem).to.not.equal(null);
@@ -16,5 +16,9 @@
     it('Register button has the right text', function() {
       expect(registerButton.innerHTML).to.equal('Jetzt Registrieren');
     });
+  });
+
+  describe('form validation', function() {
+    
   });
 })();

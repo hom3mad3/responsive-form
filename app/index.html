@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dawanda_Form</title>
+  <title>Responsive Form</title>
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -40,39 +40,47 @@
 
         <label>Vorname</label>
         <div class="inner-addon left-addon">
-          <i class="fa fa-user"></i>
-          <input type="text" class="form-control" />
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input name="vorname" type="text" class="form-control" />
         </div>
-
 
         <label>Nachname</label>
         <div class="inner-addon left-addon">
-          <i class="fa fa-user"></i>
-          <input type="text" class="form-control" />
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input name="nachname" type="text" class="form-control" />
         </div>
 
         <label>Mitgliedsname</label>
         <div class="inner-addon left-addon">
-          <i class="fa fa-user"></i>
-          <input type="text" class="form-control" placeholder="Dein Mitgliedsname ist öffentlich" />
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input name="mitglied" type="text" class="form-control" placeholder="Dein Mitgliedsname ist öffentlich" />
         </div>
 
-
         <label>E-mail</label>
-        <input type="email" class="email" id="email" name="email">
+        <div class="inner-addon left-addon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <input type="email" id="email" class="email" name="email" />
+        </div>
 
         <label>Passwort</label>
-        <input type="password" id="passwort" />
+        <div class="inner-addon left-addon">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input name="password" type="password" id="password" class="form-control" />
+        </div>
 
         <label class=daten>
           <input type="checkbox" name="chk" value="">Ich willige in die Verarbeitung und Nutzung meiner Daten gemas der Datenschützenerklärung ein.
         </label>
 
         <button type="submit" id="register-button" class="button confirm" value="Jetzt Registrieren">Jetzt Registrieren</button>
+
       </form>
+
+        <p class="subtitle lines"><span>Bereits mietglied bei DaWanda? <a href="#">Hier einloggen</a></span></p>
+
     </div>
 
-    <p class="subtitle lines"><span>Bereits mietglied bei DaWanda? <a href="#">Hier einloggen</a></span></p>
+
 
   </div>
 
@@ -98,6 +106,7 @@
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 

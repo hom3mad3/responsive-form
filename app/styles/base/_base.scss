@@ -38,3 +38,7 @@ a {
     text-decoration: underline;
   }
 }
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+}
