@@ -11,7 +11,7 @@ i tried to keep my sass files in accordance to a component based structure. also
 
 **Tests**
 
-as I lack a lot of experience, there is a lot of things to learn when it comes to testing, so I decided to try behaviour-driven approach for the first time. Mocha is very friendly, and uses english like assertions, but maybe for jquery testing I would rather have used Q-Unit.
+as I lack experience, there is a lot of things to learn when it comes to testing, so I decided to try behaviour-driven approach for the first time. Mocha is very friendly, and uses english like assertions, but maybe for jquery testing I would rather have used Q-Unit.
 
 **Validation**
 
