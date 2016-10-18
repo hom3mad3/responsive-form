@@ -23,10 +23,10 @@
 }
 /* add padding  */
 .left-addon input {
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .right-addon input {
-  padding-right: 30px;
+  padding-right: 50px;
 }
 .fa-envelope {
   font-size: 15px;
@@ -34,4 +34,7 @@
 }
 .fa-lock {
   padding: 8px 10.5px !important;
+}
+.fa-facebook {
+  padding-right: 1.5em;
 }

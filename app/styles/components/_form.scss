@@ -2,17 +2,15 @@
 // Form
 // -----------------------------------------------------------------------------
 .contact-form {
-  max-width: 320px;
-  margin: 0 auto;
+  max-width: 300px;
+  left: 50%;
+  margin: 0 auto !important;
 }
 form {
   padding: 1em 0;
   border-radius: 0.5em;
   background: $light-grey;
   box-shadow: 1em 0 0 $light-grey, -1em 0 0 $light-grey;
-}
-label {
-  text-transform: uppercase;
 }
 button:focus {
   outline: none;
@@ -35,13 +33,16 @@ input[type=checkbox] {
   vertical-align: middle;
   position: relative;
 }
-label.daten {
+.form-label {
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+.daten {
   display: block;
   margin: 0.7em 0;
   padding-left: 15px;
   text-indent: -15px;
   font-size: 0.6em;
-  text-transform: lowercase!important;
 }
 input.email {
   -webkit-appearance: none;
@@ -52,25 +53,29 @@ input.email {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* invalid fields */
-input.invalid {
-  border: 1px solid #FE8B0F;
-  background-color: #FDD;
+//Validation Error
+#password-error {
+  position: relative;
 }
-input:focus.invalid {
-  outline: none;
-}
-/* error messages */
-.error {
-  width: 100%;
-  padding: 0;
-  font-size: 80%;
-  color: white;
-  border-radius: 0 0 5px 5px;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: red;
-}
-.error.active {
-  padding: 0.3em;
+.help-block {
+  background-color: lighten($error, 25%);
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba($error,0.6);
+  color: darken($error, 10%);
+  display: none;
+  font-size: 12px;
+  font-family: 'Helvetica',sans-serif;
+  padding: 7px 10px;
+  position: absolute;
+  width: 200px;
+  z-index: 4;
+  &:before {
+    border-bottom: 7px solid lighten($error, 25%);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    top: -7px;
+    content: '';
+    display: block;
+    position: absolute;
+  }
 }

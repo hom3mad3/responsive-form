@@ -9,10 +9,50 @@
 
 <body>
   <div id="mocha">
-    <form>
-      <input type="email" name="email" required>
-      <button id="signup-button">Jetzt Registrieren</button>
-    </form>
+    <div id="mainform">
+      <form id="form">
+
+        <label class="form-label">Vorname</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input name="vorname" id="vorname" class="vorname" type="text" />
+        </div>
+
+        <label class="form-label">Nachname</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input name="nachname" id="nachname" class="nachname" type="text" />
+        </div>
+
+        <label class="form-label">Mitgliedsname</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input name="mitglied" id="mitglied" type="text" placeholder="Dein Mitgliedsname ist öffentlich" />
+        </div>
+
+        <label class="form-label">E-mail</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <input type="email" class="email" name="email" />
+        </div>
+
+        <label class="form-label">Passwort</label>
+        <div class="inner-addon left-addon">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input name="password" type="password" id="password" />
+        </div>
+
+        <label class=daten>
+          <input type="checkbox" id="checkbox" name="checkbox" value=""> Ich willige in die Verarbeitung und Nutzung meiner Daten gemas der Datenschützenerklärung ein.
+        </label>
+
+        <button type="submit" id="register-button" class="button confirm" value="Jetzt Registrieren">Jetzt Registrieren</button>
+
+      </form>
+      <p class="disclaimer">Bereits mietglied bei DaWanda?<a href="#"> Hier einloggen</a></p>
+
+    </div>
+
   </div>
   <script src="../bower_components/mocha/mocha.js"></script>
   <script>

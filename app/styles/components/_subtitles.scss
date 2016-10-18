@@ -1,9 +1,20 @@
-.subtitle {
+.subtitle a {
   font-size: 0.6em;
+  text-transform: uppercase;
+  color: grey;
+  font-weight: bold;
+}
+.disclaimer {
+  font-size: 0.6em;
+  text-align: center;
+  border-top: 1px solid $dark-grey;
+  margin-top: 1em;
+  padding-top: 1em;
 }
 .lines {
   line-height: 0.5;
   text-align: center;
+  width: 100%;
 }
 .lines span {
   display: inline-block;
@@ -16,13 +27,13 @@
   height: 5px;
   border-bottom: 1px solid $dark-grey;
   top: 0;
-  width: 100%;
+  width: 50%;
 }
 .lines span:before {
   right: 100%;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .lines span:after {
   left: 100%;
-  margin-left: 15px;
+  margin-left: 10px;
 }

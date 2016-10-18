@@ -12,20 +12,13 @@
   border-bottom: 3px solid;
   font-weight: bold;
   text-align: center;
+  font-family: $text-font-stack;
 }
-
-.button:active{
-  border-bottom: none;
+.facebook {
+  font-size: 0.8em;
+  @include button-bg($facebook);
 }
-
-.facebook{
-  font-size: .8em;
-  background-color: $facebook;
-  border-color: darken($facebook, 20%);
-}
-
-.confirm{
+.confirm {
   font-size: 1em;
-  background-color: #729C0C;
-  border-color: darken(#729C0C, 20%);
+  @include button-bg(#729C0C);
 }
